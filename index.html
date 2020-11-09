@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joseph DiCarlantonio</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/transitions.css">
+        <link rel="stylesheet" type="text/css" href="styles/modal.css">
+    </head>
+    <body>
+        <section id="container">
+            <h1 id="homePageName">Joseph DiCarlantonio</h1>
+            <img src="imgs/Lac_d'Aubert.jpg">
+            <p class="homeText">Software Developer in the Los Angeles area</p>
+            <div align="right">
+                <button onclick="transitionToPage('./pages/projects.html')" class="projectBtn">Projects</button>
+                <button id="skillsBtn">Skills</button>
+            </div>
+        </section>
+
+        <div id="skillsModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span class="close">&times;</span>
+
+                    <ul class="skillList">
+                        <h4>Languages</h4>
+                        <li>HTML/CSS/Javascript</li>
+                        <li>Golang</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                    <ul class="skillList">
+                        <h4>Database</h4>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <ul class="skillList">
+                        <h4>Cloud</h4>
+                        <li>Amazon AWS</li>
+                    </ul>
+                    <ul class="skillList">
+                        <h4>Frameworks</h4>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>AWS Amplify</li>
+                    </ul>
+                    <ul class="skillList">
+                        <h4>Project Management</h4>
+                        <li>Git</li>
+                        <li>Agile</li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footerText">Contact:<br>
+            <a href="mailto:jdica003@gmail.com">jdica003@gmail.com</a></p>
+        </footer>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/modal.js"></script>
+    </body>
+</html>
