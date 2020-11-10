@@ -6,19 +6,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="../styles/transitions.css">
+        <link rel="stylesheet" type="text/css" href="../styles/tab.css">
     </head>
     <body>
 
         <div class="transition transition-1 is-active"></div>
 
         <h1 id="projectsTitle">My Projects</h1>
-        <p>You can find samples of my work on my <a href="https://github.com/jdicarlantonio">GitHub</a> page. <br> Below is an overview of my biggest projects:</p>
+        <p>You can find samples of my work on my <a href="https://github.com/jdicarlantonio">GitHub</a> page. <br> Below are a few of my biggest projects:</p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'CloudMusic')">Cloud Music</button>
+            <button class="tablinks" onclick="openProject(event, 'FXProcessor')">Effects Processor</button>
+            <button class="tablinks" onclick="openProject(event, 'MechShop')">Mechanic Shop</button>
+            <button class="tablinks" onclick="openProject(event, 'TranscribeHelper')">Transcribe Helper</button>
+        </div>
+        
+        <div id="CloudMusic" class="tabcontent">
+            <h3>Cloud Music</h3>
+            <a href="https://github.com/jdicarlantonio/CloudMusic">Source</a>
+            <p>A collaborative IoT audio receiver which runs on the Raspberry Pi</p>
+            <h4>Skills</h4>
+            <ul class="projectSkills">
+                <li>Javascript</li>
+                <li>React</li>
+                <li>AWS Amplify</li>
+                <li>Python</li>
+            </ul>
+
+        </div>
+        
+        <div id="FXProcessor" class="tabcontent">
+            <h3>Effects Processor</h3>
+            <a href="https://github.com/jdicarlantonio/FXP">Source</a>
+            <p>A Raspberry Pi based multi effects processor aimed at guitar</p>
+            <video width="560" height="315" controls>
+                <source src="../vid/FXProcessor.mp4" type="video/mp4">
+            </video>
+            <h4>Skills</h4>
+            <ul class="projectSkills">
+                <li>C++</li>
+                <li>React Native</li>
+            </ul>
+        </div>
+        
+        <div id="MechShop" class="tabcontent">
+            <h3>Mechanic Shop</h3>
+            <a href="https://github.com/jdicarlantonio/GoMechanicShop">Source</a>
+            <p>A REST API for a mock up of a mechanic shop written in the Go programming language</p>
+            <img class="screenshot" src="../imgs/mshopss.png">
+            <h4>Skills</h4>
+            <ul class="projectSkills">
+                <li>Go</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+            </ul>
+        </div> 
+
+        <div id="TranscribeHelper" class="tabcontent">
+            <h3>Transcribe Helper</h3>
+            <a href="https://github.com/jdicarlantonio/TranscribeHelper">Source</a>
+            <p>A cross platform desktop application to help musicians with song transcription</p>
+            <img class="screenshot" src="../imgs/transcribeScreenshot.png">
+            <h4>Skills</h4>
+            <ul class="projectSkills">
+                <li>C++</li>
+                <li>JUCE Framework</li>
+            </ul>
+        </div> 
+
         <button onclick="transitionToPage('../index.html')">Home</button>
 
         <footer>
             <p class="footerText">Contact:<br>
             <a href="mailto:jdica003@gmail.com">jdica003@gmail.com</a></p>
-        </footer>
+        </footer>        
         <script type="text/javascript" src="../scripts/main.js"></script>
+        <script type="text/javascript" src="../scripts/tab.js"></script>
     </body>
 </html>
